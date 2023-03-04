@@ -53,6 +53,7 @@ jobs:
           uses: docker/build-push-action@v2
           with:
             push: true
+            context: ./api_yamdb/
             tags: odin11nn/infra_action:latest
   deploy:
     runs-on: ubuntu-latest
