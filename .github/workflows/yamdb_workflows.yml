@@ -54,7 +54,7 @@ jobs:
           with:
             push: true
             context: ./api_yamdb/
-            tags: odin11nn/infra_action:latest
+            tags: odin11nn/yamdb_final:latest
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
