@@ -1,5 +1,5 @@
 
-# версия docker-compose:
+# версия docker-compose:::
 version: '3.8'
 
 # имена и описания контейнеров, которые должны быть развёрнуты
@@ -15,7 +15,7 @@ services:
     env_file:
       - ./.env
   web:
-    build: /api_yamdb/
+    build: ./api_yamdb/
     restart: always
     volumes:
       # Контейнер web будет работать с данными, хранящиеся в томе static_value,
