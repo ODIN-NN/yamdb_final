@@ -31,6 +31,10 @@ jobs:
         # запустить написанные разработчиком тесты
         python manage.py test
 
+    - name: Pytest
+      run: |
+        pytest
+
   build_and_push_to_docker_hub:
       name: Push Docker image to Docker Hub
       runs-on: ubuntu-latest
